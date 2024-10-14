@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+</head>
+
+<body>
+    <div>
+        <h2>Library Membership Registration</h2>
+        <p>Register for a free membership and read on!</p>
+    </div>
+    <form action="submit.js" method="POST"> <!-- Added method for clarity -->
+        <div class="name">
+            <h3>Name</h3>
+            <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Ram" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Kumar" required>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+    
+        <!-- Address Section -->
+        <div class="address">
+            <h3>Address</h3>
+            <div class="form-group">
+                <label for="street-address">Street Address</label>
+                <input type="text" name="street_address" id="street-address" placeholder="Street Address" required>
+            </div>
+            <div class="form-group">
+                <label for="address-line-2">Address Line 2</label>
+                <input type="text" name="address_line_2" id="address-line-2" placeholder="Address Line 2">
+            </div>
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="City">
+                <label for="state">State</label>
+                <input type="text" name="state" id="state" placeholder="State">
+            </div>
+            <div class="form-group">
+                <label for="zip">Zip Code</label>
+                <input type="text" name="zip" id="zip" placeholder="Zip Code">
+            </div>
+            <div class="form-group">
+                <label for="country">Country</label>
+                <select name="country" id="country" required>
+                    <option value="" disabled selected>- Select -</option>
+                    <option value="india">India</option>
+                    <option value="pakistan">Pakistan</option>
+                    <option value="china">China</option>
+                    <option value="russia">Russia</option>
+                    <option value="usa">United States</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="australia">Australia</option>
+                    <option value="germany">Germany</option>
+                    <option value="france">France</option>
+                    <option value="japan">Japan</option>
+                    <option value="canada">Canada</option>
+                    <option value="south-africa">South Africa</option>
+                    <option value="mexico">Mexico</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="demo@email.com" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="phone">Phone No.</label>
+            <input type="tel" name="phone" id="phone" required placeholder="+99 8877665544" pattern="\+[0-9]{2} [0-9]{10}">
+        </div>
+    
+        <!-- Hobbies Section -->
+        <div class="hobbies">
+            <h3>What would you use the library for?</h3>
+            <div class="form-group">
+                <input type="checkbox" name="reference" id="reference" value="reference">
+                <label for="reference">Reference</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="in-house-reading" id="in-house-reading" value="in-house-reading">
+                <label for="in-house-reading">In-house Reading</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="borrowing" id="borrowing" value="borrowing">
+                <label for="borrowing">Borrowing</label>
+            </div>
+        </div>
+    
+        <!-- Library Sections Section -->
+        <div class="library-sections">
+            <h3>Which sections of the library would you like access to?</h3>
+            <div class="form-group">
+                <input type="checkbox" name="all-sections" id="all" value="all">
+                <label for="all">All</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="magazines" id="magazines" value="magazines">
+                <label for="magazines">Magazines</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="fiction" id="fiction" value="fiction">
+                <label for="fiction">Fiction</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="non-fiction" id="non-fiction" value="non-fiction">
+                <label for="non-fiction">Non-Fiction</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="electronic" id="electronic" value="electronic">
+                <label for="electronic">Electronic</label>
+            </div>
+        </div>
+    
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    
+    
+</body>
+
+</html>
